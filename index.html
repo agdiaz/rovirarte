@@ -1,556 +1,619 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gustavo Rovira - Arte argentino</title>
-<meta name="description" content="">
-<meta name="author" content="">
+<html lang="en" ng-app="gallery">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gustavo Rovira - Arte argentino</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<!-- Favicons
-    ================================================== -->
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <!-- Favicons
+        ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
-<!-- Bootstrap -->
-<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
 
-<!-- Stylesheet
-    ================================================== -->
-<link rel="stylesheet" type="text/css"  href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
-<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
-<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+    <!-- Stylesheet
+        ================================================== -->
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<!-- Navigation
-    ==========================================-->
-<nav id="menu" class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand page-scroll" href="#page-top">Gustavo Rovira</a> </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about" class="page-scroll">Trayectoría</a></li>
-        <li><a href="#restaurant-menu" class="page-scroll">Seminarios</a></li>
-        <li><a href="#portfolio" class="page-scroll">Galería</a></li>
-        <li><a href="#team" class="page-scroll">Prensa</a></li>
-        <li><a href="#contact" class="page-scroll">Contacto</a></li>
-
-        <li><a target="_blank" href="https://www.google.com.ar/maps/place/Jos%C3%A9+Pedro+Varela+4775,+C1417EYW+CABA/@-34.6104674,-58.5189731,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcb7d12357bd25:0x3886bc4d5eeae071!8m2!3d-34.6104718!4d-58.5167844?hl=en"><i class="fa fa-map-marker"></i></a></li>
-        <li><a target="_blank" href="https://www.facebook.com/rovirarte"><i class="fa fa-facebook"></i></a></li>
-        <li><a target="_blank" href="https://twitter.com/rovirarte"><i class="fa fa-twitter"></i></a></li>
-        <li><a target="_blank" href="https://www.youtube.com/channel/UC7ruhJ41T3P9HAVYVXc0Iag"><i class="fa fa-youtube"></i></a>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-  </div>
-</nav>
-<!-- Header -->
-<header id="header">
-  <div class="intro">
-    <div class="overlay">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+  </head>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" ng-controller="GalleryCtrl">
+    <!-- Navigation ==========================================-->
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand page-scroll" href="#page-top">Gustavo Rovira</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#about" class="page-scroll">Bio</a>
+            </li>
+            <li>
+              <a href="#seminarios" class="page-scroll">Seminarios</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="page-scroll">Galería</a>
+            </li>
+            <li>
+              <a href="#team" class="page-scroll">Prensa</a>
+            </li>
+            <li>
+              <a href="#contact" class="page-scroll">Contacto</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.google.com.ar/maps/place/Jos%C3%A9+Pedro+Varela+4775,+C1417EYW+CABA/@-34.6104674,-58.5189731,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcb7d12357bd25:0x3886bc4d5eeae071!8m2!3d-34.6104718!4d-58.5167844?hl=en"><i class="fa fa-map-marker"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.facebook.com/rovirarte"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://twitter.com/rovirarte"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.youtube.com/channel/UC7ruhJ41T3P9HAVYVXc0Iag"><i class="fa fa-youtube"></i>
+            </a>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+    </nav>
+    <!-- Header -->
+    <header id="header">
+      <div class="intro">
+        <div class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="intro-text">
+                <h1>Gustavo Rovira</h1>
+                <p>Arte argentino</p>
+                <a href="#portfolio" class="btn btn-custom btn-lg page-scroll">Obras</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- About Section -->
+    <div id="about" class="about-text">
+      <div class="container">
+        <div class="row bio">
+          <div class="section-title text-center">
+            <h2>Biograf&iacute;a</h2>
+            <hr>
+          </div>
+          <div class="col-md-4 side-img">
+            <img src="http://res.cloudinary.com/rovirarte/image/upload/v1488060368/bio_002_ijh76r.jpg" alt="about">
+          </div>
+          <div class="col-md-8">
+            <p>
+              <strong>Gustavo Rovira</strong> comienza desde muy pequeño su camino en el arte.
+              Autodidacta, viaja a Los Angeles en 1985, donde se perfecciona en el uso de técnicas de acuarela.
+              <br/>
+              A partir del año 1995 realiza en Buenos Aires diversos talleres con pintores de la talla de <strong>Marcos Borio, Gabriel Allerbon y Jose Marchi.</strong>
+              <br/>
+              Actualmente cuenta con su propio taller donde maneja técnicas diversas como acuarelas, acrílico y óleo con espátula.
+              <br/>
+              Hoy día, Gustavo Rovira es uno de los exponentes argentinos de mayor reconocimiento en pintura campestre.
+            </p>
+            <div class="about-items" >
+              <div class="col-sm-6" ng-repeat="photo in about">
+                <div class="about-item">
+                  <img src="{{photo.url}}" class="img-responsive" alt="photo.alt">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="row">
-          <div class="intro-text">
-            <h1>Gustavo Rovira</h1>
-            <p>Arte argentino</p>
-            <a href="#portfolio" class="btn btn-custom btn-lg page-scroll">Obras</a> </div>
+          <div class="section-title text-center">
+            <h2>Trayector&iacute;a</h2>
+            <hr>
+          </div>
+          <div class="col-md-6">
+            <h5>Arte</h5>
+            <p>
+              Partimos de entender que un objeto de arte es aquel que nos crea la vivencia de lo estético, la vivencuia de lo maravilloso, con ese sentimiento subyacente de angustia, de temor a lo desconocido y a la muerte, y que por ello, mismo sirve para recrear la vida.
+            </p>
+            <h5>Tango</h5>
+            <p>
+              Belleza de ritmo y melodía. Bailar un tango es distracción y encontrarse a sí mismo con un fuerte contenido erótico.
+              </br>
+              </br>
+              Una pasión sentida en cuerpo y alma.
+              </br>
+              </br>
+              Hay letras en esos tangos (no todas) con un sentido poético que deslumbra.
+              </br>
+              </br>
+              Poesía que constituye una exacta pintura de lo social.
+              </br>
+              </br>
+              Macedonio Fernández, creo, fue quien dijo “mientras no lo diga un tango, única fidedignidad nuestra, lo único seguro por ser la sola cosa que no consultamos a Europa”.
+              </br>
+              </br>
+              El tango, (recordemos a Discepolín) logra captar lo cotidiano y lo profundo. En los hechos sociales es cronista de la época. El tango nos hace únicos e iguales, porteños e irrepetibles.
+            </p>
+            <h5>Gustavo Rovira</h5>
+            <p>
+              Es un hombre que no acepta la tristeza (aún teniéndola) y quiere (exige) la plenitud de la vida. Vive con ojos de asombro lo maravilloso y nos lo muestra en su estética y con su ética recreando la vida. Bodegones, paisajes y escenas porteñas y de tango (salones o cabarets), cielos, panes, campo, luces, humo, amor, tristezas y felicidades. Importa poco ahora si son acuarelas, tizas u óleos. Importan sus ojos y los nuestros. Rovira pinta. Sus obras tienen ritmo y melodía. Su pintura tiene sentido poético y una pasión sentida en cuerpo y alma que lo hace cierto. Y, algunas veces, lo dice en tango, sin consultar a nadie. Gustavo, por favor, seguí cantando, contando, pintando, queríéndonos como ahora.
+              Prosperidad y larga vida!!
+            </p>
+            <p><strong>Por Sr. Hugo Bocciardo</strong></p>
+          </div>
+          <div class="col-md-6">
+            <h5>Cuando la creación artística empalidece la realidad</h5>
+            <h3>Gustavo Rovira y su realismo mágico</h3>
+            <p>
+              La historia del arte moderno se basa en la concepción de la obra como una unidad total, las figuras parciales son absorbidas por el todo, por el concepto universal del paisaje o del objeto.
+              </br>
+              La obra de arte es entonces el producto de la visión recreada de una realidad. Arte es entonces la explosión de ese mundo interior de quien siente en forma imperiosa e irrefrenable el llamado de la creación.
+              </br>
+              Crear un paisaje, recrear sus cielos, darle color a su follaje es buscar en nuestra infinita gama de colores interiores y plasmar, en esa mezcla de paisaje, aventura interna y ensoñación una nueva realidad, elevando las ramas al cielo y despegando el paisaje de la tierra, como buscando un espacio en el universo mágico, para ubicar nuestra pintura para siempre.
+              </br>
+              La obra de Gustavo Rovira con ese paradigma de que el Arte, el verdadero, no es efímero, y en ese objetivo supremo de perdurar, abre e inaugura nuevos y perdurables caminos. Su obra es inédita.
+              </br>
+              Leonardo, en el siglo XV admitía que el follaje de los árboles resultaba más bello, cuando la luz caía dentro de las hojas. Hoy la luz y las sombras, que antes estaban al servicio de las formas, se emanciparon de los objetos, concibieron su vida propia, más independiente y Gustavo Rovira maneja esos claro oscuros con inusitada maestría. Pesados troncos se tornan transparentes, raíces que se desdibujan para que sea más etérea la propuesta. Cielos celestes, casi blancos, con ramas en forma de plegaria, con un excelente manejo de los planos, otorgan a su obra un realismo mágico, con toques de espiritualidad, hasta en las huellas-que las dibuja y desdibuja- para otorgarle la mayor libertad a la propuesta.
+              </br>
+              Su paleta es impecable: colores puros, sin exagerada saturación, su dibujo pródigo, con espacios amplios, casi siempre envolventes de ese maravilloso muestrario de la naturaleza que nos hace detener y permanecer frente a su obra con el temor de no alcanzar a recordarla.
+              </br>
+            </p>
+            <p><strong>Por Lic. María Elena Beneito</strong></p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
-<!-- About Section -->
-<div id="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-6">
-        <img src="img/papa_animated.gif" />
-        <iframe  width="420" height="315" src="http://www.youtube.com/embed/vM-ot4RvJsE" frameborder="0" allowfullscreen></iframe>
-        <div class="fb-post fb_iframe_widget" data-href="https://www.facebook.com/gustavo.rovira.7/posts/1112203052171780" data-width="450" data-show-text="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=503&amp;href=https%3A%2F%2Fwww.facebook.com%2Fgustavo.rovira.7%2Fposts%2F1112203052171780&amp;locale=en_US&amp;sdk=joey&amp;show_text=false&amp;width=450"><span style="vertical-align: bottom; width: 450px; height: 357px;"><iframe name="f3658c375a1ef0c" width="450px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:post Facebook Social Plugin" src="https://www.facebook.com/v2.6/plugins/post.php?app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F0eWevUAMuoH.js%3Fversion%3D42%23cb%3Df5473e4f22e0ec%26domain%3Drovirarte.com%26origin%3Dhttp%253A%252F%252Frovirarte.com%252Ff34bb3abb7dc9c8%26relation%3Dparent.parent&amp;container_width=503&amp;href=https%3A%2F%2Fwww.facebook.com%2Fgustavo.rovira.7%2Fposts%2F1112203052171780&amp;locale=en_US&amp;sdk=joey&amp;show_text=false&amp;width=450" style="border: none; visibility: visible; width: 450px; height: 357px;" class=""></iframe></span></div>
-      </div>
-      <div class="col-xs-12 col-md-6">
-        <div class="about-text">
-          <h2>Trayectoría</h2>
+    <!-- Seminarios Section -->
+    <div id="seminarios">
+      <div class="section-title text-center center">
+        <div class="overlay">
+          <h2>Seminarios</h2>
           <hr>
           <p>
-            <strong>Gustavo Rovira</strong> comienza desde muy pequeño su camino en el arte.
-            Autodidacta, viaja a Los Angeles en 1985, donde se perfecciona en el uso de técnicas de acuarela.
-            <br/>
-            A partir del año 1995 realiza en Buenos Aires diversos talleres con pintores de la talla de <strong>Marcos Borio, Gabriel Allerbon y Jose Marchi.</strong>
-            <br/>
-            Actualmente cuenta con su propio taller donde maneja técnicas diversas como acuarelas, acrílico y óleo con espátula.
-            <br/>
-            Hoy día, Gustavo Rovira es uno de los exponentes argentinos de mayor reconocimiento en pintura campestre.
-          </p>
-          <h4>Cuando la creación artística empalidece la realidad</h4>
-          <h3>Gustavo Rovira y su realismo mágico</h3>
-          <p>
-            La historia del arte moderno se basa en la concepción de la obra como una unidad total, las figuras parciales son absorbidas por el todo, por el concepto universal del paisaje o del objeto.
-            </br>
-            La obra de arte es entonces el producto de la visión recreada de una realidad. Arte es entonces la explosión de ese mundo interior de quien siente en forma imperiosa e irrefrenable el llamado de la creación.
-            </br>
-            Crear un paisaje, recrear sus cielos, darle color a su follaje es buscar en nuestra infinita gama de colores interiores y plasmar, en esa mezcla de paisaje, aventura interna y ensoñación una nueva realidad, elevando las ramas al cielo y despegando el paisaje de la tierra, como buscando un espacio en el universo mágico, para ubicar nuestra pintura para siempre.
-            </br>
-            La obra de Gustavo Rovira con ese paradigma de que el Arte, el verdadero, no es efímero, y en ese objetivo supremo de perdurar, abre e inaugura nuevos y perdurables caminos. Su obra es inédita.
-            </br>
-            Leonardo, en el siglo XV admitía que el follaje de los árboles resultaba más bello, cuando la luz caía dentro de las hojas. Hoy la luz y las sombras, que antes estaban al servicio de las formas, se emanciparon de los objetos, concibieron su vida propia, más independiente y Gustavo Rovira maneja esos claro oscuros con inusitada maestría. Pesados troncos se tornan transparentes, raíces que se desdibujan para que sea más etérea la propuesta. Cielos celestes, casi blancos, con ramas en forma de plegaria, con un excelente manejo de los planos, otorgan a su obra un realismo mágico, con toques de espiritualidad, hasta en las huellas-que las dibuja y desdibuja- para otorgarle la mayor libertad a la propuesta.
-            </br>
-            Su paleta es impecable: colores puros, sin exagerada saturación, su dibujo pródigo, con espacios amplios, casi siempre envolventes de ese maravilloso muestrario de la naturaleza que nos hace detener y permanecer frente a su obra con el temor de no alcanzar a recordarla.
-            </br>
-          </p>
-          <p>
-            <strong>Por Lic. María Elena Beneito</strong>
+            Comenzar&aacute; el nuevo ciclo de seminarios continuos abocados al arte, dibujo, pintura, entre otros temas,
+            dictados por el artista plastico <strong>miembro de la UNESCO</strong>.
           </p>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-<!-- Restaurant Menu Section -->
-<div id="restaurant-menu">
-  <div class="section-title text-center center">
-    <div class="overlay">
-      <h2>Seminarios</h2>
-      <hr>
-      <p>
-        Comenzar&aacute; el nuevo ciclo de seminarios continuos abocados al arte, dibujo, pintura, entre otros temas,
-        dictados por el artista plastico <strong>miembro de la UNESCO</strong>.
-      </p>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12">
-        <div class="menu-section">
-          <div class="menu-item">
-            <div class="menu-item-name"> D&iacute;as s&aacute;bados: De 10 a 20hs., con una hora de intervalo.</div>
-            <div class="menu-item-description">
-              Cambiando su desarrollo y temática al cabo de 4 seminarios dictados.
-              Se har&aacute; entrega a cada alumno de bastidor 80x60cm, acr&iacute;licos profesionales (Eureka), papel misionero y carbonilla.
-              </br></br>
-              <strong>El desarrollo de croquis de la figura humana se realizar&aacute; con modelo vivo.</strong>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <div class="menu-section">
+              <div class="menu-item">
+                <div class="menu-item-name"> D&iacute;as s&aacute;bados: De 10 a 20hs., con una hora de intervalo.</div>
+                <div class="menu-item-description">
+                  Cambiando su desarrollo y temática al cabo de 4 seminarios dictados.
+                  Se har&aacute; entrega a cada alumno de bastidor 80x60cm, acr&iacute;licos profesionales (Eureka), papel misionero y carbonilla.
+                  </br></br>
+                  <strong>El desarrollo de croquis de la figura humana se realizar&aacute; con modelo vivo.</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="portfolio-items" >
+            <div class="col-sm-6 col-md-4 col-lg-4" ng-repeat="photo in seminarios">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <img src="{{photo.url}}" class="img-responsive" alt="photo.alt">
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- Portfolio Section -->
-<div id="portfolio">
-  <div class="section-title text-center center">
-    <div class="overlay">
-      <h2>Galería</h2>
-      <hr>
-      <p>Las obras del maestro</p>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-8 col-sm-offset-2">
-        <p>
-          <strong>Gustavo Rovira</strong> es un hombre que no acepta la tristeza (aún teniéndola) y
-          quiere (exige) la plenitud de la vida.</br>
-          Vive con ojos de asombro lo maravilloso y nos lo muestra en su estética y
-          con su ética recreando la vida.</br>
-          Bodegones, paisajes y escenas porteñas y de tango (salones o cabarets),
-          cielos, panes, campo, luces, humo, amor, tristezas y felicidades.
-          Importa poco ahora si son acuarelas, tizas u óleos. Importan sus ojos y los nuestros.</br>
-          Rovira pinta. Sus obras tienen ritmo y melodía.</br>
-          Su pintura tiene sentido poético y una pasión sentida en cuerpo y alma que lo hace cierto.
-          Y, algunas veces, lo dice en tango, sin consultar a nadie.</br>
-          Gustavo, por favor, seguí cantando, contando, pintando, queríéndonos como ahora.
-        </p>
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+      <div class="section-title text-center center">
+        <div class="overlay">
+          <h2>Galería</h2>
+          <hr>
+          <p>Las obras del maestro</p>
+        </div>
       </div>
-      <div class="categories">
-        <ul class="cat">
-          <li>
-            <ol class="type">
-              <li><a href="#" data-filter="*" class="active">Todas</a></li>
-              <li><a href="#" data-filter=".reality">La realidad</a></li>
-              <li><a href="#" data-filter=".dreams">Los sueños</a></li>
-              <li><a href="#" data-filter=".sacro">Sacro</a></li>
-            </ol>
-          </li>
-        </ul>
-        <div class="clearfix"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="portfolio-items">
-        <div class="col-sm-6 col-md-4 col-lg-4 reality">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/arte_urbano_01.jpg" title="Arte urbano" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Arte urbano</h4>
-              </div>
-              <img src="img/portfolio/arte_urbano_01.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+      <div class="container">
+        <div class="row">
+          <div class="categories">
+            <ul class="cat">
+              <li>
+                <ol class="type">
+                  <li><a href="#" data-filter="*" class="active">Todas</a></li>
+                  <li><a href="#" data-filter=".reality">La realidad</a></li>
+                  <li><a href="#" data-filter=".dreams">Los sueños</a></li>
+                  <li><a href="#" data-filter=".sacro">Sacro</a></li>
+                </ol>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 reality">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/arte_urbano_02.jpg" title="Arte urbano" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Arte urbano</h4>
+        <div class="row">
+          <div class="portfolio-items">
+            <div class="col-sm-6 col-md-4 col-lg-4 reality">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/arte_urbano_01.jpg" title="Arte urbano" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Arte urbano</h4>
+                  </div>
+                  <img src="img/portfolio/arte_urbano_01.jpg" class="img-responsive" alt="Project Title"> </a> </div>
               </div>
-              <img src="img/portfolio/arte_urbano_02.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 reality">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/arte_urbano_03.jpg" title="Arte urbano" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Arte urbano</h4>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 reality">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/arte_urbano_02.jpg" title="Arte urbano" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Arte urbano</h4>
+                  </div>
+                  <img src="img/portfolio/arte_urbano_02.jpg" class="img-responsive" alt="Project Title"> </a> </div>
               </div>
-              <img src="img/portfolio/arte_urbano_03.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 reality">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/norte_argentino_01.jpg" title="Arte urbano" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Norte argentino</h4>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 reality">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/arte_urbano_03.jpg" title="Arte urbano" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Arte urbano</h4>
+                  </div>
+                  <img src="img/portfolio/arte_urbano_03.jpg" class="img-responsive" alt="Project Title"> </a> </div>
               </div>
-              <img src="img/portfolio/norte_argentino_01.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 reality">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/norte_argentino_02.jpg" title="Arte urbano" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Norte argentino</h4>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 reality">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/norte_argentino_01.jpg" title="Arte urbano" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Norte argentino</h4>
+                  </div>
+                  <img src="img/portfolio/norte_argentino_01.jpg" class="img-responsive" alt="Project Title"> </a> </div>
               </div>
-              <img src="img/portfolio/norte_argentino_02.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 reality">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/norte_argentino_03.jpg" title="Arte urbano" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Norte argentino</h4>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 reality">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/norte_argentino_02.jpg" title="Arte urbano" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Norte argentino</h4>
+                  </div>
+                  <img src="img/portfolio/norte_argentino_02.jpg" class="img-responsive" alt="Project Title"> </a> </div>
               </div>
-              <img src="img/portfolio/norte_argentino_03.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 reality">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/polo_01.jpg" title="Arte urbano" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Polo</h4>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 reality">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/norte_argentino_03.jpg" title="Arte urbano" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Norte argentino</h4>
+                  </div>
+                  <img src="img/portfolio/norte_argentino_03.jpg" class="img-responsive" alt="Project Title"> </a> </div>
               </div>
-              <img src="img/portfolio/polo_01.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 reality">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/polo_02.jpg" title="Arte urbano" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Polo</h4>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 reality">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/polo_01.jpg" title="Arte urbano" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Polo</h4>
+                  </div>
+                  <img src="img/portfolio/polo_01.jpg" class="img-responsive" alt="Project Title"> </a> </div>
               </div>
-              <img src="img/portfolio/polo_02.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 reality">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/polo_02.jpg" title="Arte urbano" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Polo</h4>
+                  </div>
+                  <img src="img/portfolio/polo_02.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              </div>
+            </div>
 
-        <div class="col-sm-6 col-md-4 col-lg-4 reality">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/retratos_01.jpg" title="Retratos" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Retratos</h4>
+            <div class="col-sm-6 col-md-4 col-lg-4 reality">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/retratos_01.jpg" title="Retratos" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Retratos</h4>
+                  </div>
+                  <img src="img/portfolio/retratos_01.jpg" class="img-responsive" alt="Project Title"> </a> </div>
               </div>
-              <img src="img/portfolio/retratos_01.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 reality">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/retratos_02.jpg" title="Retratos" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Retratos</h4>
-              </div>
-              <img src="img/portfolio/retratos_02.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 reality">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/retratos_03.jpg" title="Retratos" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Retratos</h4>
-              </div>
-              <img src="img/portfolio/retratos_03.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 reality">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/retratos_04.jpg" title="Retratos" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Retratos</h4>
-              </div>
-              <img src="img/portfolio/retratos_04.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 reality">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/retratos_05.jpg" title="Retratos" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Retratos</h4>
-              </div>
-              <img src="img/portfolio/retratos_05.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 reality">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/retratos_06.jpg" title="Retratos" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Retratos</h4>
-              </div>
-              <img src="img/portfolio/retratos_06.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 dreams">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/suenos_humana_01.jpg" title="Sueños" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Los sueños</h4>
-              </div>
-              <img src="img/portfolio/suenos_humana_01.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 dreams">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/suenos_humana_02.jpg" title="Sueños" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Los sueños</h4>
-              </div>
-              <img src="img/portfolio/suenos_humana_02.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 dreams">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/suenos_humana_03.jpg" title="Sueños" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Los sueños</h4>
-              </div>
-              <img src="img/portfolio/suenos_humana_03.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 dreams">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/suenos_humana_04.jpg" title="Sueños" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Los sueños</h4>
-              </div>
-              <img src="img/portfolio/suenos_humana_04.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 dreams">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/suenos_humana_05.jpg" title="Sueños" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Los sueños</h4>
-              </div>
-              <img src="img/portfolio/suenos_humana_05.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 sacro">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/sacro_01.jpg" title="Sacro" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Sacro</h4>
-              </div>
-              <img src="img/portfolio/sacro_01.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 sacro">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/sacro_02.jpg" title="Sacro" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Sacro</h4>
-              </div>
-              <img src="img/portfolio/sacro_02.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 sacro">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/sacro_03.jpg" title="Sacro" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Sacro</h4>
-              </div>
-              <img src="img/portfolio/sacro_03.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Team Section -->
-<div id="team" class="text-center">
-  <div class="overlay">
-    <div class="container">
-      <div class="col-md-10 col-md-offset-1 section-title">
-        <h2>Prensa</h2>
-        <hr>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <div class="team-img"><img src="./img/p10-f1-13.jpg" alt="..."></div>
-            <div class="caption">
-              <h3>Expo Sumarte: El pintor Gustavo Rovira será uno de los artistas que presentarán su producción</h3>
-              <p>28 de Septiembre de 2016</p>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <div class="team-img"><img src="./img/vicente_lopez.jpg" alt="..."></div>
-            <div class="caption">
-              <h3>Rovira expone en el Concejo Deliberante de Vicente López</h3>
-              <p>5 de Mayo de 2016</p>
+            <div class="col-sm-6 col-md-4 col-lg-4 reality">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/retratos_02.jpg" title="Retratos" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Retratos</h4>
+                  </div>
+                  <img src="img/portfolio/retratos_02.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <div class="team-img"><img src="./img/artistas_devoto.jpg" alt="..."></div>
-            <div class="caption">
-              <h3>Muestra de artistas argentinos consagrados y emergentes en Villa Devoto</h3>
-              <p>10 de Septiembre de 2015</p>
+            <div class="col-sm-6 col-md-4 col-lg-4 reality">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/retratos_03.jpg" title="Retratos" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Retratos</h4>
+                  </div>
+                  <img src="img/portfolio/retratos_03.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <div class="team-img"><img src="./img/susana_gimenez.jpg" alt="..."></div>
-            <div class="caption">
-              <h3>El artista argentino Gustavo Rovira retrat&oacute; a la diva m&aacute;xima de nuestro pa&iacute;s</h3>
-              <p>14 de Agosto de 2014</p>
+            <div class="col-sm-6 col-md-4 col-lg-4 reality">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/retratos_04.jpg" title="Retratos" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Retratos</h4>
+                  </div>
+                  <img src="img/portfolio/retratos_04.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <div class="team-img"><img src="./img/papa_francisco.jpg" alt="..."></div>
-            <div class="caption">
-              <h3>El artista Gustavo Rovira emocionó al papa con su mural homenaje</h3>
-              <p>29 de Mayo de 2014</p>
+            <div class="col-sm-6 col-md-4 col-lg-4 reality">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/retratos_05.jpg" title="Retratos" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Retratos</h4>
+                  </div>
+                  <img src="img/portfolio/retratos_05.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <div class="team-img"><img src="./img/devoto.png" alt="..."></div>
-            <div class="caption">
-              <h3>Arte para homenajear a Villa Devoto</h3>
-              <p>10 de Septiembre de 2013</p>
+            <div class="col-sm-6 col-md-4 col-lg-4 reality">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/retratos_06.jpg" title="Retratos" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Retratos</h4>
+                  </div>
+                  <img src="img/portfolio/retratos_06.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <div class="team-img"><img src="http://rovirarte.com/img/press/pressNotaClarin500.jpg" alt="..."></div>
-            <div class="caption">
-              <h3>Diario Clarín </h3>
-              <p>28 de Julio de 2005</p>
+            <div class="col-sm-6 col-md-4 col-lg-4 dreams">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/suenos_humana_01.jpg" title="Sueños" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Los sueños</h4>
+                  </div>
+                  <img src="img/portfolio/suenos_humana_01.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <div class="team-img"><img src="http://rovirarte.com/img/tray/tray_2010_pinceladas1.jpg" alt="..."></div>
-            <div class="caption">
-              <h3>Pinceladas a lo grande </h3>
-              <p>Segunda edicion, concurso de pintura y dibujo "Una sociedad que integra a sus mayores" </p>
+            <div class="col-sm-6 col-md-4 col-lg-4 dreams">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/suenos_humana_02.jpg" title="Sueños" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Los sueños</h4>
+                  </div>
+                  <img src="img/portfolio/suenos_humana_02.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <div class="team-img"><img src="http://rovirarte.com/img/tray/trayUAI500.jpg" alt="..."></div>
-            <div class="caption">
-              <h3>Jornada "Pinturas Argentinas"</h3>
-              <p>16 de Mayo de 2005, disertante. Universidad Abierta Interamericana </p>
+            <div class="col-sm-6 col-md-4 col-lg-4 dreams">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/suenos_humana_03.jpg" title="Sueños" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Los sueños</h4>
+                  </div>
+                  <img src="img/portfolio/suenos_humana_03.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 dreams">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/suenos_humana_04.jpg" title="Sueños" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Los sueños</h4>
+                  </div>
+                  <img src="img/portfolio/suenos_humana_04.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 dreams">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/suenos_humana_05.jpg" title="Sueños" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Los sueños</h4>
+                  </div>
+                  <img src="img/portfolio/suenos_humana_05.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 sacro">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/sacro_01.jpg" title="Sacro" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Sacro</h4>
+                  </div>
+                  <img src="img/portfolio/sacro_01.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 sacro">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/sacro_02.jpg" title="Sacro" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Sacro</h4>
+                  </div>
+                  <img src="img/portfolio/sacro_02.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 sacro">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="img/portfolio/sacro_03.jpg" title="Sacro" data-lightbox-gallery="gallery1">
+                  <div class="hover-text">
+                    <h4>Sacro</h4>
+                  </div>
+                  <img src="img/portfolio/sacro_03.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- Contact Section -->
-<div id="contact" class="text-center">
-  <div class="container">
-    <div class="section-title text-center">
-      <h2>Contacto</h2>
-      <hr>
-      <p>Comunicarse con Gustavo Rovira</p>
-    </div>
-    <div class="container text-center">
-      <div class="col-md-4">
-        <h3>Dirección</h3>
-        <div class="contact-item">
-          <p>José Pedro Varela 4775</p>
-          <p>Villa Devoto, Ciudad Autónoma de Buenos Aires</p>
+    <!-- Team Section -->
+    <div id="team" class="text-center">
+      <div class="overlay">
+        <div class="container">
+          <div class="col-md-10 col-md-offset-1 section-title">
+            <h2>Prensa</h2>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="team-img"><img src="./img/p10-f1-13.jpg" alt="..."></div>
+                <div class="caption">
+                  <h3>Expo Sumarte: El pintor Gustavo Rovira será uno de los artistas que presentarán su producción</h3>
+                  <p>28 de Septiembre de 2016</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="team-img"><img src="./img/vicente_lopez.jpg" alt="..."></div>
+                <div class="caption">
+                  <h3>Rovira expone en el Concejo Deliberante de Vicente López</h3>
+                  <p>5 de Mayo de 2016</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="team-img"><img src="./img/artistas_devoto.jpg" alt="..."></div>
+                <div class="caption">
+                  <h3>Muestra de artistas argentinos consagrados y emergentes en Villa Devoto</h3>
+                  <p>10 de Septiembre de 2015</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="team-img"><img src="./img/susana_gimenez.jpg" alt="..."></div>
+                <div class="caption">
+                  <h3>El artista argentino Gustavo Rovira retrat&oacute; a la diva m&aacute;xima de nuestro pa&iacute;s</h3>
+                  <p>14 de Agosto de 2014</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="team-img"><img src="./img/papa_francisco.jpg" alt="..."></div>
+                <div class="caption">
+                  <h3>El artista Gustavo Rovira emocionó al papa con su mural homenaje</h3>
+                  <p>29 de Mayo de 2014</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="team-img"><img src="./img/devoto.png" alt="..."></div>
+                <div class="caption">
+                  <h3>Arte para homenajear a Villa Devoto</h3>
+                  <p>10 de Septiembre de 2013</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="team-img"><img src="http://rovirarte.com/img/press/pressNotaClarin500.jpg" alt="..."></div>
+                <div class="caption">
+                  <h3>Diario Clarín </h3>
+                  <p>28 de Julio de 2005</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="team-img"><img src="http://rovirarte.com/img/tray/tray_2010_pinceladas1.jpg" alt="..."></div>
+                <div class="caption">
+                  <h3>Pinceladas a lo grande </h3>
+                  <p>Segunda edicion, concurso de pintura y dibujo "Una sociedad que integra a sus mayores" </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <div class="team-img"><img src="http://rovirarte.com/img/tray/trayUAI500.jpg" alt="..."></div>
+                <div class="caption">
+                  <h3>Jornada "Pinturas Argentinas"</h3>
+                  <p>16 de Mayo de 2005, disertante. Universidad Abierta Interamericana </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <h3>Horarios</h3>
-        <div class="contact-item">
-          <p>Lunes-Viernes: 10:00 - 13:00</p>
-          <p>Sábados: 11:00 - 14:00</p>
+    </div>
+    <!-- Contact Section -->
+    <div id="contact" class="text-center">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Contacto</h2>
+          <hr>
+          <p>Comunicarse con Gustavo Rovira</p>
         </div>
-      </div>
-      <div class="col-md-4">
-        <h3>Información de contacto</h3>
-        <div class="contact-item">
-          <p>T&eacute;l: <a href="tel:+541567096056">+54 (011) 15-6709-6056</a></p>
-          <p>Email: <a target="_blank" href="mailto:gustavorovirarte@yahoo.com.ar">gustavorovirarte@yahoo.com.ar</a></p>
+        <div class="container text-center">
+          <div class="col-md-4">
+            <h3>Dirección</h3>
+            <div class="contact-item">
+              <p>José Pedro Varela 4775</p>
+              <p>Villa Devoto, Ciudad Autónoma de Buenos Aires</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h3>Horarios</h3>
+            <div class="contact-item">
+              <p>Lunes-Viernes: 10:00 - 13:00</p>
+              <p>Sábados: 11:00 - 14:00</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h3>Información de contacto</h3>
+            <div class="contact-item">
+              <p>T&eacute;l: <a href="tel:+541567096056">+54 (011) 15-6709-6056</a></p>
+              <p>Email: <a target="_blank" href="mailto:gustavorovirarte@yahoo.com.ar">gustavorovirarte@yahoo.com.ar</a></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<div id="footer">
-  <div class="container-fluid text-center copyrights">
-    <div class="col-md-8 col-md-offset-2">
-      <div class="social">
-        <ul>
-          <li><a target="_blank" href="https://www.google.com.ar/maps/place/Jos%C3%A9+Pedro+Varela+4775,+C1417EYW+CABA/@-34.6104674,-58.5189731,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcb7d12357bd25:0x3886bc4d5eeae071!8m2!3d-34.6104718!4d-58.5167844?hl=en"><i class="fa fa-map-marker"></i></a>
-          <li><a target="_blank" href="https://www.facebook.com/rovirarte"><i class="fa fa-facebook"></i></a></li>
-          <li><a target="_blank" href="https://twitter.com/rovirarte"><i class="fa fa-twitter"></i></a></li>
-          <li><a target="_blank" href="https://www.youtube.com/channel/UC7ruhJ41T3P9HAVYVXc0Iag"><i class="fa fa-youtube"></i></a>
-        </ul>
+    <div id="footer">
+      <div class="container-fluid text-center copyrights">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="social">
+            <ul>
+              <li><a target="_blank" href="https://www.google.com.ar/maps/place/Jos%C3%A9+Pedro+Varela+4775,+C1417EYW+CABA/@-34.6104674,-58.5189731,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcb7d12357bd25:0x3886bc4d5eeae071!8m2!3d-34.6104718!4d-58.5167844?hl=en"><i class="fa fa-map-marker"></i></a>
+              <li><a target="_blank" href="https://www.facebook.com/rovirarte"><i class="fa fa-facebook"></i></a></li>
+              <li><a target="_blank" href="https://twitter.com/rovirarte"><i class="fa fa-twitter"></i></a></li>
+              <li><a target="_blank" href="https://www.youtube.com/channel/UC7ruhJ41T3P9HAVYVXc0Iag"><i class="fa fa-youtube"></i></a>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/SmoothScroll.js"></script>
-<script type="text/javascript" src="js/nivo-lightbox.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.js"></script>
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-<script type="text/javascript" src="js/contact_me.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-</body>
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/nivo-lightbox.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+    <script type="text/javascript" src="js/contact_me.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/controllers/gallery.js"></script>
+  </body>
 </html>

@@ -175,7 +175,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../img/brush.jpg) no-repeat center center;
+	background: url(http://res.cloudinary.com/rovirarte/image/upload/v1488060349/arboles_001_ajouds.jpg) no-repeat center center;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -237,32 +237,45 @@ header .intro-text {
 	line-height: 24px;
 	margin: 15px 0 30px;
 }
+#about .side-img img {
+	width: auto;
+  height: auto;
+  max-width: 494px;
+  max-height: 350px;
+  min-height: 350px;
+}
+#about .about-item {
+	margin: 15px 0;
+}
+#about .about-item img {
+	max-width: 300px;
+  width: 300px;
+}
+#about .bio {
+	margin-bottom: 2em;
+}
 /* Menu Section */
-#restaurant-menu {
+#seminarios {
 	padding: 0 0 60px 0;
 }
-#restaurant-menu .section-title {
-	background: #444 url(../img/atelier_01.jpg) center center no-repeat fixed;
+#seminarios .section-title {
+	background: #444 url(http://res.cloudinary.com/rovirarte/image/upload/v1488060348/arboles_003_gznu3b.jpg) center center no-repeat fixed;
 	background-size: cover;
 }
-#restaurant-menu .section-title h2 {
+#seminarios .section-title h2 {
 	color: #fff;
 }
-#restaurant-menu img {
-	width: 300px;
-	box-shadow: 15px 0 #a7c44c;
-}
-#restaurant-menu h3 {
+#seminarios h3 {
 	padding: 10px 0;
 	text-transform: uppercase;
 }
-#restaurant-menu .menu-section hr {
+#seminarios .menu-section hr {
 	margin: 0 auto;
 }
-#restaurant-menu .menu-section {
+#seminarios .menu-section {
 	margin: 0 20px 80px;
 }
-#restaurant-menu .menu-section-title {
+#seminarios .menu-section-title {
 	font-size: 26px;
 	display: block;
 	font-weight: 500;
@@ -270,21 +283,21 @@ header .intro-text {
 	margin: 20px 0;
 	text-align: center;
 }
-#restaurant-menu .menu-item {
+#seminarios .menu-item {
 	margin: 35px 0;
 	font-size: 18px;
 }
-#restaurant-menu .menu-item-name {
+#seminarios .menu-item-name {
 	font-weight: 600;
 	font-size: 17px;
 	color: #555;
 	border-bottom: 2px dotted rgb(213, 213, 213);
 }
-#restaurant-menu .menu-item-description {
+#seminarios .menu-item-description {
 	font-style: italic;
 	font-size: 15px;
 }
-#restaurant-menu .menu-item-price {
+#seminarios .menu-item-price {
 	float: right;
 	font-weight: 600;
 	color: #555;
